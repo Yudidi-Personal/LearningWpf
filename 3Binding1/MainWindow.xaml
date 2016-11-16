@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_3Binding1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
+    <Grid >
+        <TextBox Name="txt1" Text="Txt1" Height="20" Width="200"></TextBox>
+        <TextBlock Name="txt2" Text="{Binding Path=Text, ElementName=txt1}" Height="20" Width="200" ></TextBlock>
     </Grid>
 </Window>
