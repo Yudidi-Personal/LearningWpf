@@ -6,7 +6,14 @@
         xmlns:local="clr-namespace:_2WpfLayout"
         mc:Ignorable="d"
         Title="GridLayout" Height="300" Width="300">
-    <Grid>
-        
+    <Grid Width="Auto">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Width="50">10</TextBlock>
+        <TextBlock Grid.Row="0" Grid.Column="1" Width="60">10</TextBlock>
+        <TextBlock Grid.Row="0" Grid.Column="2" Width="70">10</TextBlock>
     </Grid>
 </Window>

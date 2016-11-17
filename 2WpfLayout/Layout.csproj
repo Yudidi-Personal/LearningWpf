@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Gird\GridLayout.xaml.cs">
+      <DependentUpon>GridLayout.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StackPanelLayout.xaml.cs">
       <DependentUpon>StackPanelLayout.xaml</DependentUpon>
     </Compile>
@@ -64,6 +67,10 @@
     <Page Include="CanvasLayout.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gird\GridLayout.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
