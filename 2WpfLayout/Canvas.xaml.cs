@@ -23,5 +23,10 @@ namespace _2WpfLayout
         {
             InitializeComponent();
         }
+
+        private void btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3Binding2", "3Binding\3Bind
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Layout", "Layout", "{7D8D387B-14E5-4503-9043-C6CA1ED46BBF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3Binding1", "3Binding1\3Binding1.csproj", "{8D4159AF-9C02-461F-ACFD-D4B0453C3596}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Binding", "Binding", "{F36EDBEA-2E7E-471B-9A80-9A79C25137A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,11 +33,17 @@ Global
 		{2AD066F8-AA18-4BC6-8254-C232C7B1097F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AD066F8-AA18-4BC6-8254-C232C7B1097F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AD066F8-AA18-4BC6-8254-C232C7B1097F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D4159AF-9C02-461F-ACFD-D4B0453C3596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D4159AF-9C02-461F-ACFD-D4B0453C3596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D4159AF-9C02-461F-ACFD-D4B0453C3596}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D4159AF-9C02-461F-ACFD-D4B0453C3596}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9EB74BB1-7CD0-428F-9BDA-6531CD353305} = {7D8D387B-14E5-4503-9043-C6CA1ED46BBF}
+		{2AD066F8-AA18-4BC6-8254-C232C7B1097F} = {F36EDBEA-2E7E-471B-9A80-9A79C25137A6}
+		{8D4159AF-9C02-461F-ACFD-D4B0453C3596} = {F36EDBEA-2E7E-471B-9A80-9A79C25137A6}
 	EndGlobalSection
 EndGlobal
