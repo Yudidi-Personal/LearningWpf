@@ -1,0 +1,19 @@
+﻿<Window x:Class="_2WpfLayout.GridLayout"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2WpfLayout"
+        mc:Ignorable="d"
+        Title="GridLayout" Height="200" Width="200">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="40"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBox Grid.Row="0" Grid.Column="0" Width="20" BorderBrush="Red">W:40</TextBox>
+        <TextBox Grid.Row="0" Grid.Column="1" Width="60" BorderBrush="Green">W:40Padding</TextBox>
+        <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="Blue">W:60Padding</TextBox>
+    </Grid>
+</Window>
