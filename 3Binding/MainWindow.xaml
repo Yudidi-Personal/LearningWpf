@@ -11,6 +11,7 @@
         <DataTemplate x:Key="nameDT">
             <TextBlock x:Name="textBoxName" Text="{Binding Name}" />
         </DataTemplate>
+        <!--DataTemplate定义数据的呈现样式,这里将数据绑定到TextBlock.Text后呈现-->
         <DataTemplate x:Key="skillDT">
             <TextBlock x:Name="textBoxSkill" Text="{Binding Skill}" />
         </DataTemplate>
@@ -20,15 +21,20 @@
     </Window.Resources>
 
     <Grid Margin="5" >
-        <ListView x:Name="listViewStudent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <ListView Grid.Row="0" x:Name="listViewStudent">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Id}" />
+                    <GridViewColumn Header="ID" DisplayMemberBinding="{Binding ID}" />
                     <GridViewColumn Header="姓名" CellTemplate="{StaticResource nameDT}" />
                     <GridViewColumn Header="技术" CellTemplate="{StaticResource skillDT}" />
                     <GridViewColumn Header="已婚" CellTemplate="{StaticResource hmDT}" />
                 </GridView>
             </ListView.View>
         </ListView>
+        <Button Grid.Row="1" Content="为官羽正名" Click="ChangeValue"></Button>
     </Grid>
 </Window>

@@ -8,6 +8,6 @@
         Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
     <Grid >
         <TextBox Name="txt1" Text="Txt1" Height="20" Width="200"></TextBox>
-        <TextBlock Name="txt2" Text="{Binding Path=Text, ElementName=txt1}" Height="20" Width="200" ></TextBlock>
+        <TextBlock Name="txt2" Text="{Binding ElementName=txt1,Path=Text}" Height="20" Width="200" ></TextBlock>
     </Grid>
 </Window>
