@@ -8,8 +8,8 @@
         Title="MainWindow" Height="350" Width="525">
     <StackPanel>
         <ListBox Name="lb" Background="LightBlue"></ListBox>
-        <TextBox Name="stuNumTextBox"  Margin="5" Background="LightGreen"/>
-        <TextBox Name="nameTextBox"  Margin="5" Background="LightGreen"/>
-        <TextBox Name="ageTextBox"  Margin="5" Background="LightGreen"/>
+        <TextBox Name="stuNumTextBox" Text="{Binding ElementName=lb,Path=SelectedValue.StuNum}" Margin="5" Background="LightGreen"/>
+        <TextBox Name="nameTextBox" Text="{Binding ElementName=lb,Path=SelectedValue.Name}"  Margin="5" Background="LightGreen"/>
+        <TextBox Name="ageTextBox" Text="{Binding ElementName=lb,Path=SelectedValue.Age}" Margin="5" Background="LightGreen"/>
     </StackPanel>
 </Window>

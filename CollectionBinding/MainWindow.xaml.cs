@@ -39,13 +39,14 @@ namespace CollectionBinding
             };
             lb.ItemsSource = studentList;
             lb.DisplayMemberPath = "Name";
-            //需求变更
+
+            //需求变更:要求点击一行后,显示选中项的某个属性
             //lb.SelectedValuePath = "stuName";
             //Binding binding = new Binding() { Source = lb, Path = new PropertyPath("SelectedValue") };
             //stuNumTextBox.SetBinding(TextBox.TextProperty, binding);
 
-            this.lb.SelectedValuePath = "StuNum";
-            this.stuNumTextBox.SetBinding(TextBox.TextProperty, new Binding("SelectedValue") { Source = this.lb });
+            //this.lb.SelectedValuePath = "StuNum";
+            //this.stuNumTextBox.SetBinding(TextBox.TextProperty, new Binding("SelectedValue") { Source = lb });//
         }
 
     }
