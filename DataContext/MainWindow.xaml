@@ -1,0 +1,16 @@
+﻿<Window x:Class="DataContext.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataContext"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="300">
+        <StackPanel>
+            <ListBox Name="stuListBox" Margin="5" Height="70" Background="LightBlue"/>
+            <ListBox Name="tchrListBox" Margin="5" Height="70" Background="LightPink"/>
+            <TextBox Name="idTextBox"  Margin="5" Background="LightGreen"/>
+            <TextBox Name="nameTextBox"  Margin="5" Background="LightGreen"/>
+            <TextBox Name="ageTextBox"  Margin="5" Background="LightGreen"/>
+        </StackPanel>
+</Window>
